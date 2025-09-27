@@ -16,10 +16,22 @@ ENTITY_HEALTH = {
     'Level1Bg5': 999,
     'Level1Bg6': 999,
     'Ship1': 300,
+    'Ship1Shot': 1,
     'Ship2': 300,
+    'Ship2Shot': 1,
     'Enemy1': 50,
-    'Enemy2': 60
+    'Enemy1Shot': 1,
+    'Enemy2': 60,
+    'Enemy2Shot': 1,
 }
+
+ENTITY_SHOT_DELAY = {
+    'Ship1': 20,
+    'Ship2': 15,
+    'Enemy1': 75,
+    'Enemy2': 100
+}
+
 EVENT_ENEMY = pygame.USEREVENT + 1
 ENTITY_SPEED = {
     'Level1Bg0': 0,
@@ -29,10 +41,16 @@ ENTITY_SPEED = {
     'Level1Bg4': 4,
     'Level1Bg5': 5,
     'Level1Bg6': 6,
+
     'Ship1': 3,
+    'Ship1Shot': 3,
     'Ship2': 3,
+    'Ship2Shot': 3,
+
     'Enemy1': 2,
-    'Enemy2': 2
+    'Enemy1Shot': 4,
+    'Enemy2': 2,
+    'Enemy2Shot': 3,
 }
 
 # M2
@@ -50,7 +68,7 @@ SHIP_KEY_LEFT = {'Ship1': pygame.K_LEFT,
                  'Ship2': pygame.K_a}
 SHIP_KEY_RIGHT = {'Ship1': pygame.K_RIGHT,
                   'Ship2': pygame.K_d}
-SHIP_KEY_SHOOT = {'Ship1': pygame.K_RCTRL,
+SHIP_KEY_SHOT = {'Ship1': pygame.K_RCTRL,
                   'Ship2': pygame.K_LCTRL}
 
 SPAWN_TIME = 4000
