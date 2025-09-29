@@ -7,7 +7,7 @@ import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from Code.Const import C_WHITE, MIN_HEIGHT, MENU_OPTION, EVENT_ENEMY, SPAWN_TIME
+from Code.Const import C_WHITE, MIN_HEIGHT, MENU_OPTION, EVENT_ENEMY, SPAWN_TIME, C_GREEN, C_CYAN
 from Code.Enemy import Enemy
 from Code.Entity import Entity
 from Code.EntityFactory import EntityFactory
@@ -41,6 +41,10 @@ class Level:
                     shot = ent.shot()
                     if shot is not None:
                         self.entity_list.append(shot)
+                if ent.name == 'Ship1':
+                    self.level_text(14, f'Player1 - Health{ent.health: .0f} | Score: {ent.score}', C_GREEN, (10,25))
+                if ent.name == 'Ship2':
+                    self.level_text(14, f'Player2 - Health{ent.health: .0f} | Score: {ent.score}', C_CYAN, (10,45))
 
 
             for event in pygame.event.get():
@@ -50,6 +54,8 @@ class Level:
                 if event.type == EVENT_ENEMY:
                     choice = random.choice(('Enemy1', 'Enemy2'))
                     self.entity_list.append(EntityFactory.get_entity(choice))
+
+
 
             # printed text
             self.level_text(14, f'{self.name} - Timeout: {self.timeout / 1000:.1f}s', C_WHITE, (10,5))
