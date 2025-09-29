@@ -107,7 +107,7 @@ SHIP_KEY_LEFT = {'Ship1': pygame.K_LEFT,
 SHIP_KEY_RIGHT = {'Ship1': pygame.K_RIGHT,
                   'Ship2': pygame.K_d}
 SHIP_KEY_SHOT = {'Ship1': pygame.K_RCTRL,
-                  'Ship2': pygame.K_LCTRL}
+                 'Ship2': pygame.K_LCTRL}
 
 SPAWN_TIME = 4000
 # M

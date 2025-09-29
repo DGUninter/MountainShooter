@@ -29,7 +29,7 @@ class Level:
         pygame.time.set_timer(EVENT_ENEMY, SPAWN_TIME)
 
     def run(self):
-        pygame.mixer_music.load(f'./asset/Music.mp3')
+        pygame.mixer_music.load(f'./asset/Level1.mp3')
         pygame.mixer_music.play(-1)
         clock = pygame.time.Clock()
         while True:
