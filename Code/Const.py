@@ -17,6 +17,11 @@ ENTITY_HEALTH = {
     'Level1Bg4': 999,
     'Level1Bg5': 999,
     'Level1Bg6': 999,
+    'Level2Bg0': 999,
+    'Level2Bg1': 999,
+    'Level2Bg2': 999,
+    'Level2Bg3': 999,
+    'Level2Bg4': 999,
     'Ship1': 300,
     'Ship1Shot': 1,
     'Ship2': 300,
@@ -35,6 +40,11 @@ ENTITY_DAMAGE = {
     'Level1Bg4': 0,
     'Level1Bg5': 0,
     'Level1Bg6': 0,
+    'Level2Bg0': 0,
+    'Level2Bg1': 0,
+    'Level2Bg2': 0,
+    'Level2Bg3': 0,
+    'Level2Bg4': 0,
     'Ship1': 1,
     'Ship1Shot': 25,
     'Ship2': 1,
@@ -53,6 +63,11 @@ ENTITY_SCORE = {
     'Level1Bg4': 0,
     'Level1Bg5': 0,
     'Level1Bg6': 0,
+    'Level2Bg0': 0,
+    'Level2Bg1': 0,
+    'Level2Bg2': 0,
+    'Level2Bg3': 0,
+    'Level2Bg4': 0,
     'Ship1': 0,
     'Ship1Shot': 0,
     'Ship2': 0,
@@ -71,6 +86,7 @@ ENTITY_SHOT_DELAY = {
 }
 
 EVENT_ENEMY = pygame.USEREVENT + 1
+EVENT_TIMEOUT = pygame.USEREVENT + 2
 ENTITY_SPEED = {
     'Level1Bg0': 0,
     'Level1Bg1': 1,
@@ -79,7 +95,11 @@ ENTITY_SPEED = {
     'Level1Bg4': 4,
     'Level1Bg5': 5,
     'Level1Bg6': 6,
-
+    'Level2Bg0': 0,
+    'Level2Bg1': 1,
+    'Level2Bg2': 2,
+    'Level2Bg3': 3,
+    'Level2Bg4': 4,
     'Ship1': 3,
     'Ship1Shot': 3,
     'Ship2': 3,
@@ -109,7 +129,12 @@ SHIP_KEY_RIGHT = {'Ship1': pygame.K_RIGHT,
 SHIP_KEY_SHOT = {'Ship1': pygame.K_RCTRL,
                  'Ship2': pygame.K_LCTRL}
 
-SPAWN_TIME = 4000
+SPAWN_TIME = 3000
+
+# T
+TIMEOUT_STEP = 100  # 100 ms
+TIMEOUT_LEVEL = 40000  # 20 s
+
 # M
 MIN_WIDTH = 576
 MIN_HEIGHT = 324
