@@ -114,7 +114,7 @@ ENTITY_SPEED = {
 # M2
 MENU_OPTION = ('NEW GAME 1P',
                'NEW GAME 2P - COOPERATIVE',
-               'NEW GAME 2P - COOPERATIVE',
+               'NEW GAME 2P - COMPETITIVE',
                'SCORE',
                'EXIT')
 # S
@@ -133,8 +133,25 @@ SPAWN_TIME = 3000
 
 # T
 TIMEOUT_STEP = 100  # 100 ms
-TIMEOUT_LEVEL = 40000  # 20 s
+TIMEOUT_LEVEL = 10000  # 40 s
 
 # M
 MIN_WIDTH = 576
 MIN_HEIGHT = 324
+
+# S
+SCORE_POS = {'Title': (MIN_WIDTH / 2, 50),
+             'EnterName': (MIN_WIDTH / 2, 80),
+             'Label': (MIN_WIDTH / 2, 90),
+             'Name': (MIN_WIDTH / 2, 110),
+             0: (MIN_WIDTH / 2, 110),
+             1: (MIN_WIDTH / 2, 130),
+             2: (MIN_WIDTH / 2, 150),
+             3: (MIN_WIDTH / 2, 170),
+             4: (MIN_WIDTH / 2, 190),
+             5: (MIN_WIDTH / 2, 210),
+             6: (MIN_WIDTH / 2, 230),
+             7: (MIN_WIDTH / 2, 250),
+             8: (MIN_WIDTH / 2, 270),
+             9: (MIN_WIDTH / 2, 290)
+             }
